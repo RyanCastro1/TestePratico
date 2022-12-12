@@ -1,0 +1,52 @@
+<!-- Como nunca programei em JS e não tinha conhecimento sobre HTML ou CSS não consegui concluir a atividade proposta, irei então comentar em lógica o que eu faria para a resolução-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- input dos dados que seriam adicionados à um array de nomes e idades -->
+    nome: <input type="text" name="txtname" id="txtname">
+    idade:<input type="number" name="txtage" id="txtage">
+    <input type="button" value="Salvar" onclick = "adicionar()">
+
+    <table id=tabela width='450' height='60'> 
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+        </tr>
+    <table>
+
+<script>
+    function adicionar(tabela){
+        //tentei incluir à ferramenta de tabelas os valores dos inputs txtname e txtage
+        var newRow = document.createElement('tr');
+        var txta = document.querySelector("input#txtage") 
+        var txtn = document.querySelector('input#txtname')
+        newRow.insertCell(0).innerHTML = idade.value
+        newRow.insertCell(1).innerHTML = nom.value
+        var age = Number(txta.value) 
+        var nom = String(txtn.value)
+        res.insertRow() = `idade ${age}`
+        table.innerHTML = `name ${nom}`
+    }
+
+    /*
+    Para o exercício 12 eu incluiria à função adicionar() um if com um forEach checando se algum nome inserido no input corresponde à algum nome já inserido.
+    
+    Para o exercício 13 eu criaria outra função onde haveria um if com um forEach para organizar a ordem decrescente e encontrar o nome correspondente, e depois organizaria a tabela através do resultado.
+    
+    No exercício 14, criaria uma nova função que excluiria os dados da linha X selecionada pelo usuário. 
+    
+    Para o 15, bastaria implementar um aviso antes de executar a exclusão.
+    
+    16: eu criaria um botão de edição, juntamente com a função alterarDados(), que funcionaria como um setter para o conteúdo da linha X coluna X.
+    
+    Para o exercício 17 bastaria inverter os critérios do if dentro da função criada.
+    */
+</script>
+</body>
+</html>
